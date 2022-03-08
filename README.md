@@ -1,4 +1,5 @@
 # LearnReact
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FUnpredictablePrashant%2FLearnReact&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 This project is dedicated for learning ReactJS.
 
 
@@ -22,8 +23,10 @@ In summary, here’s what happens when you try to update the DOM in React:
 </ol>
 
 ## Example
-Understanding through live example. We created a javascript based digital clock. If you see the developer console you will see how the various elements of DOM is being changed.
-![Javascript Clock](/images/clockJS.gif "Javascript Clock")
+<p>Understanding through live example. We created a javascript based digital clock. If you see the developer console you will see how the various elements of DOM is being changed.</p>
 
-Now let's create a React based Clock. In this example, you will see how  only one element is being rendered.
+![Javascript Clock](/images/clockJS.gif "Javascript Clock")
+<br>
+<p>Now let's create a React based Clock. In this example, you will see how  only one element is being rendered.</p>
+
 ![ReactJS Clock](/images/clockReact.gif "ReactJS Clock")
