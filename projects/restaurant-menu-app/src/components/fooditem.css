@@ -1,0 +1,40 @@
+.items {
+    color: black;
+    text-align: center;
+}
+
+.main-food-item {
+    display: flex;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.main-food-item:hover {
+    transform: scale(1.2) ;
+    transition: transform 1s ease-in-out
+}
+
+.item-padding {
+    margin-right: 20px;
+}
+
+.veg {
+    color: green;
+}
+
+.non-veg{
+    color: red;
+}
+
+.mocktails {
+    color: blue;
+}
+
+.cocktails{
+    color: orange;
+}
