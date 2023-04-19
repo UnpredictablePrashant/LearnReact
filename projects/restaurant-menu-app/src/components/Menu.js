@@ -4,7 +4,7 @@ import Drinks from './drinks';
 import Orderform from './orderform';
 import { useEffect, useState } from 'react';
 import axios from "axios";
-import Tabs from './Tabs';
+// import Tabs from './Tabs';
 
 
 function Menu() {
@@ -79,7 +79,7 @@ function Menu() {
         <h3 className='App'>Customer Form</h3>
         <Orderform></Orderform>
         <div className='App'>
-          <button onClick={changeTabs}>{tabs}</button>
+          {/* <button onClick={changeTabs}>{tabs}</button> */}
         </div>
         <Drinks dType={resAPI.gender} dName={resAPI.name.first} dPrice={resAPI.email}></Drinks>
   
