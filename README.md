@@ -71,3 +71,58 @@ npm start
 <li>Create a user form where customer enters their name and print the name in console.</li>
 </ul>
 </p>
+
+## Redux
+It consist of 3 major part - Action, Reducer, Store.
+
+1. Action: They are plain javascript object that has a `type` field which only tells what to do.
+```js
+   return{
+    type: 'INCREMENT',
+    payload: num
+   }
+```
+Actions are created by Action creator:
+```js
+    export const incNumber = (num) => {
+        return{
+            type: 'INCREMENT',
+            payload: num
+        }
+    }
+```
+
+2. Reducer: They are functions which take current state and an action as an arguments, and return a new state result.
+
+```js
+const initialState = 0;
+const changeTheNumber = (state = initialState, action) => {
+    switch(action.type){
+        case 'INCREMENT': return state + action.payload;
+        case 'DECREMENT': return state - action.payload;
+        default: return state
+    }
+}
+
+```
+
+3. Store: It brings together the state, actions, and reducers that make up the app. One redux application can only have one single store. Every redux store has a single root reducer function.
+
+```js
+import {createStore} from 'redux';
+const store = createStore(rootReducers)
+```
+
+
+### Redux Principle:
+1. Single source of truth: Global state of application is stored inside a single store.
+2. State is Read-Only: The only way to change the state is to dispatch an action.
+3. Immutability, one-way data flow, predictability of the outcome.
+4. Changes are made with pure reducer functions.
+
+### Installing and connecting Redux:
+
+```bash
+npm install redux react-redux
+```
+
