@@ -126,3 +126,69 @@ const store = createStore(rootReducers)
 npm install redux react-redux
 ```
 
+# React with TypeScript
+
+## Typescript
+
+```js
+let name: string;
+let age: number;
+let status: boolean;
+let subjects: string[];
+let marks: number[];
+let role: [number, string] //tuple
+role = [27, 'prashant'] // tuple example
+let height: number | string;// to make both string and number - union
+
+//Object using type
+type Person = {
+  name: string;
+  age: number;
+  mark?: number; //to make it optional 
+}
+let person: Person = {
+  name: 'Person',
+  age: 27
+}
+// extending a type
+type Pk = {
+  a: string;
+  b: string;
+}
+
+type Sk = Pk & {
+  c: string;
+  d: string;
+}
+
+let newFun: (name: string ) => void // this returns void for returning number specify number instead of void.
+let anyFun: (name: string ) => any // to return any but better to return unknown
+let personName: unknown;
+let notReturn: (name: string) => never // never returns anything
+// a function to get the time
+let getTime = (): number => {
+    return new Date().getTime();
+  }
+
+// creating objects using interface
+interface Animals {
+  legs: number;
+  origin: string;
+}
+// extending a interface
+interface Human extends Animals {
+  hands: number;
+}
+
+
+
+```
+
+
+## Newer Version
+
+```bash
+npx create-react-app my-app --template typescript
+```
+Checkout the documentation: https://create-react-app.dev/docs/adding-typescript
+
